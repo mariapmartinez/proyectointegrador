@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* declaracion tipografia */
+
+body{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: normal; 
+}
+
+body h2, h3{
+    font-family:'Petit Formal Script', cursive;
+}
+
+/* estilos NAV BAR */
+
+/*inicio smedia query*/
+
+/*mobile media query*/
+
+@media only screen and(max-width:400px){
+    .menu-conteiner{
+        width: 100%
+    }
+}
+/*tablet media query*/
+@media only screen and(min-width:401px){
+    .menu-box{
+        width: 50%;
+    }
+}
+/*desktop media query*/
+@media only screen and(min-width:961px){
+    .menu-conteiner{
+        width: 100%;
+    }
+}
+
+/* fin media query*/
+
+.display {
+    top: 0;
+	left: 0;
+	width: 100%;
+	height: 85px;
+	background: #f9482e;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 3px solid #6eb59a;
+	align-items: center;
+	position: fixed;	
+	z-index: 3;
+}
+
+.display .logo-home {
+    margin-left: 70px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+.display .menu-box {
+    margin-right: 13%;
+}
+
+.display .menu-box .menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.display .menu-box .menu li {
+    list-style: none;
+}
+
+.display .menu-box .menu li .menu-font{
+	text-decoration: none;
+	margin: 0px 8px;
+	padding: 5px; 
+	border-radius: 10px;
+	transition: 0.3s;
+	font-size: 20px;
+	color: #ffffff; 
+	transition: all 0.5s ease-out;
+}
+
+.display .menu-box .menu li .menu-font:hover {
+    background-color: rgb(110, 181, 154);
+    color: #ffffff;
+}
+
+/* estilos HOME */
+
+
+.home-container .imagen1-header{
+    border-bottom: 5px solid #6eb59a;
+}
+
+/* estilos ABOUT */
+.about-conteiner{
+    background-color: #ffffff;
+    margin: 5rem 0rem;
+}
+
+.about-conteiner .container-texto-about{
+    font-size: 35px;
+    color:#217073;
+    display: flex;
+    justify-content: center;
+}
+
+.about-conteiner .conteiner-about-text .parrafo-about{
+    padding: 30px 266px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #4d4d4d;
+}
+
+.about-conteiner .container-texto-about .h2-about-starealacris{
+    font-size: 25px;
+    color:#fb6f33;
+    display: flex;
+    justify-content: center;
+}
+
+.about-conteiner .conteiner-arbol .h3-arbol{
+    font-size: 20px;
+    color:#00aac7;
+    display: flex;
+    justify-content: center;
+}
+
+.about-conteiner .conteiner-arbol .conteiner-img-arbol{
+    display: flex;
+    justify-content: center;
+}
+
+/* estilos PROYECTOS */
+
+.conteiner-proyectos{
+    width: 100%;
+}
+
+.conteiner-proyectos .box-proyectos .proyectos-imgcontainer 
+.img-bg .imagen1-fond-2 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.conteiner-proyectos .box-proyectos .proyectos-imgcontainer 
+.img-proyectos .imagen3-port-1{
+    position: absolute;
+    top: 400%;
+    left: 0%;
+    right: 50%;
+    bottom: 0%;
+    margin: auto;
+    display: block;
+}
+
+.conteiner-proyectos .box-proyectos .proyectos-imgcontainer 
+.img-proyectos .imagen4-port-2{
+    position: absolute;
+    top: 400%;
+    left: 2%;
+    right: 0%;
+    bottom: 0%;
+    margin: auto;
+    display: block;
+}
+
+.conteiner-proyectos .box-proyectos .proyectos-imgcontainer  
+.img-proyectos .imagen5-port-3{
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    right: 0%;
+    bottom: 0%;
+    margin: auto;
+    display: block;
+}
+
+.conteiner-proyectos .box-proyectos .proyectos-imgcontainer 
+.img-proyectos  .imagen6-port-4{
+    position: absolute;
+    top: 480%;
+    left: 0%;
+    right: 50%;
+    bottom: 0%;
+    margin: auto;
+    display: block;
+}
+
+.conteiner-proyectos .box-proyectos .proyectos-imgcontainer 
+.img-proyectos .imagen7-port-5{
+    position: absolute;
+    top: 480%;
+    left: 2%;
+    right: 0%;
+    bottom: 0%;
+    margin: auto;
+    display: block;
+}
+
+.conteiner-proyectos .box-proyectos .proyectos-imgcontainer 
+.img-proyectos .imagen8-port-6{
+    position: absolute;
+    top: 480%;
+    left: 50%;
+    right: 0%;
+    bottom: 0%;
+    margin: auto;
+    display: block;
+}
+
+/* hover img proyectos*/
+.imagen3-port-1:hover{
+    color: #ffffff;
+    opacity: 80%;
+}
+
+.imagen4-port-2:hover{
+    color: #ffffff;
+    opacity: 80%;
+}
+
+.imagen5-port-3:hover {
+    color: #ffffff;
+    opacity: 80%;
+}
+
+.imagen6-port-4:hover {
+    color: #ffffff;
+    opacity: 80%;
+}
+
+.imagen7-port-5:hover {
+    color: #ffffff;
+    opacity: 80%;
+} 
+
+/*inicio smedia query img-proyectos */
+
+/*mobile media query*/
+
+@media only screen and(max-width:400px){
+    .img-proyectos {
+        width: 100%
+    }
+}
+/*tablet media query*/
+@media only screen and(min-width:401px){
+    .img-proyectos{
+        width: 50%;
+    }
+}
+/*desktop media query*/
+@media only screen and(min-width:961px){
+    .img-proyectos {
+        width: 100%;
+    }
+}
+
+/*fin smedia query proyectos cards*/
+
+/* estilos trabajos*/
+
+.conteiner-trabajos{
+    width: 100%;
+}
+
+.conteiner-trabajos .conteiner-box{
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner-trabajos .conteiner-box
+.proyecto-jack{
+    background-image: url(img/proyectos/fond-3.png);
+    background-size: cover;
+} 
+
+.conteiner-trabajos .conteiner-box
+.proyecto-jack .conteiner-texto-jack{
+    padding: 100px 100px;
+    width: 50%;
+}
+
+.conteiner-trabajos .conteiner-box
+.titulo-proyectos h2{
+    background-color: #ffffff;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: normal;
+    color: #6db79b;
+    padding: 20px 20px;
+}
+
+.conteiner-trabajos .conteiner-box
+.proyecto-jack .conteiner-texto-jack
+.h3-jack{
+    font-size: 20px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: normal;
+    color: #ffffff;
+    padding: 10px 0px;
+}
+
+.conteiner-trabajos .conteiner-box
+.proyecto-jack .conteiner-texto-jack
+.h2-jack{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: bolder;
+    color: #ffffff;
+    line-height : 40px;
+}
+
+.conteiner-trabajos .conteiner-box
+.proyecto-jack .conteiner-texto-jack
+.h2-jackmaestro{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: bolder;
+    color: #ffffff;
+    line-height : 20px;
+}
+
+hr {
+    border: 3px solid #ffffff;
+    opacity: 100%;
+    width: 300px;
+}
+
+.conteiner-trabajos .conteiner-box
+.proyecto-jack .conteiner-texto-jack
+.parrafo-jack{
+    font-size: 13px;
+    color: #ffffff;
+    line-height : 20px;
+}
+
+.conteiner-trabajos .conteiner-box
+.proyecto-jack .jack .conteiner-fotojack{
+    width: 50%;
+}
+
+.conteiner-trabajos .conteiner-box
+.proyecto-jack .jack .conteiner-fotojack
+.fotojack-01{
+    width: 40rem; 
+    margin-left: 100px;
+    padding-top: 50px;
+}
+
+/* estilos EXPERIENCIA */
+
+.box-experiencia .titulo-experiencia h2{
+    background-color: #6db79b;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: normal;
+    color: #ffffff;
+    padding: 20px 20px;
+    margin-top: 20px;
+}
+
+.box-experiencia .conteiner-experiencia
+.parrafo-experiencia{
+    padding: 30px 266px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #4d4d4d;
+}
