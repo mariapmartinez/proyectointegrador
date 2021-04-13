@@ -4,32 +4,44 @@
     box-sizing: border-box;
 }
 
-/* declaracion tipografia */
-
+/* declaracion tipografia body */
+body h1{
+    font-family:'Petit Formal Script', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+body h2{
+    font-family: 'Montserrat', 'sans-serif';
+}
+body h3{
+    font-family: 'Montserrat', 'sans-serif';
+}
 body{
     font-family: 'Montserrat', 'sans-serif';
     font-weight: normal; 
-}
-
-body h2, h3{
-    font-family:'Petit Formal Script', cursive;
+    font-size: 12px;
 }
 
 /* estilos NAV BAR */
-
-/*inicio smedia query*/
-
+/************************************ INICIO MEDIA  QUERY  NAV BAR *********************************************/
 /*mobile media query*/
 
 @media only screen and(max-width:400px){
     .menu-conteiner{
-        width: 100%
+        width: 100%;
     }
 }
+
+@media only screen and (min-width: 350px) {
+    .menu-conteiner{
+      width: 100%;
+    }
+  }
+
 /*tablet media query*/
 @media only screen and(min-width:401px){
-    .menu-box{
-        width: 50%;
+    .menu-box, .imagen1-header{
+        width: 100%;
     }
 }
 /*desktop media query*/
@@ -38,8 +50,13 @@ body h2, h3{
         width: 100%;
     }
 }
+@media only screen and(min-width:1258px){
+    .menu-conteiner{
+        width: 100%;
+    }
+}
 
-/* fin media query*/
+/************************************ FIN MEDIA  QUERY  NAV BAR *********************************************/
 
 .display {
     top: 0;
@@ -57,8 +74,8 @@ body h2, h3{
 
 .display .logo-home {
     margin-left: 70px;
-    margin-bottom: 15px;
-    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-top: 37px;
 }
 
 .display .menu-box {
@@ -90,275 +107,382 @@ body h2, h3{
     color: #ffffff;
 }
 
-/* estilos HOME */
-
-
-.home-container .imagen1-header{
-    border-bottom: 5px solid #6eb59a;
-}
-
-/* estilos ABOUT */
-.about-conteiner{
-    background-color: #ffffff;
-    margin: 5rem 0rem;
-}
-
-.about-conteiner .container-texto-about{
-    font-size: 35px;
-    color:#217073;
-    display: flex;
-    justify-content: center;
-}
-
-.about-conteiner .conteiner-about-text .parrafo-about{
-    padding: 30px 266px;
-    font-size: 14px;
-    font-weight: normal;
-    color: #4d4d4d;
-}
-
-.about-conteiner .container-texto-about .h2-about-starealacris{
-    font-size: 25px;
-    color:#fb6f33;
-    display: flex;
-    justify-content: center;
-}
-
-.about-conteiner .conteiner-arbol .h3-arbol{
-    font-size: 20px;
-    color:#00aac7;
-    display: flex;
-    justify-content: center;
-}
-
-.about-conteiner .conteiner-arbol .conteiner-img-arbol{
-    display: flex;
-    justify-content: center;
-}
-
-/* estilos PROYECTOS */
-
-.conteiner-proyectos{
-    width: 100%;
-}
-
-.conteiner-proyectos .box-proyectos .proyectos-imgcontainer 
-.img-bg .imagen1-fond-2 {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.conteiner-proyectos .box-proyectos .proyectos-imgcontainer 
-.img-proyectos .imagen3-port-1{
-    position: absolute;
-    top: 400%;
-    left: 0%;
-    right: 50%;
-    bottom: 0%;
-    margin: auto;
-    display: block;
-}
-
-.conteiner-proyectos .box-proyectos .proyectos-imgcontainer 
-.img-proyectos .imagen4-port-2{
-    position: absolute;
-    top: 400%;
-    left: 2%;
-    right: 0%;
-    bottom: 0%;
-    margin: auto;
-    display: block;
-}
-
-.conteiner-proyectos .box-proyectos .proyectos-imgcontainer  
-.img-proyectos .imagen5-port-3{
-    position: absolute;
-    top: 400%;
-    left: 50%;
-    right: 0%;
-    bottom: 0%;
-    margin: auto;
-    display: block;
-}
-
-.conteiner-proyectos .box-proyectos .proyectos-imgcontainer 
-.img-proyectos  .imagen6-port-4{
-    position: absolute;
-    top: 480%;
-    left: 0%;
-    right: 50%;
-    bottom: 0%;
-    margin: auto;
-    display: block;
-}
-
-.conteiner-proyectos .box-proyectos .proyectos-imgcontainer 
-.img-proyectos .imagen7-port-5{
-    position: absolute;
-    top: 480%;
-    left: 2%;
-    right: 0%;
-    bottom: 0%;
-    margin: auto;
-    display: block;
-}
-
-.conteiner-proyectos .box-proyectos .proyectos-imgcontainer 
-.img-proyectos .imagen8-port-6{
-    position: absolute;
-    top: 480%;
-    left: 50%;
-    right: 0%;
-    bottom: 0%;
-    margin: auto;
-    display: block;
-}
-
-/* hover img proyectos*/
-.imagen3-port-1:hover{
-    color: #ffffff;
-    opacity: 80%;
-}
-
-.imagen4-port-2:hover{
-    color: #ffffff;
-    opacity: 80%;
-}
-
-.imagen5-port-3:hover {
-    color: #ffffff;
-    opacity: 80%;
-}
-
-.imagen6-port-4:hover {
-    color: #ffffff;
-    opacity: 80%;
-}
-
-.imagen7-port-5:hover {
-    color: #ffffff;
-    opacity: 80%;
-} 
-
-/*inicio smedia query img-proyectos */
-
+/* estilos Home */
+/************************************ INICIO MEDIA  QUERY  HOME *********************************************/
 /*mobile media query*/
 
 @media only screen and(max-width:400px){
-    .img-proyectos {
-        width: 100%
-    }
-}
-/*tablet media query*/
-@media only screen and(min-width:401px){
-    .img-proyectos{
-        width: 50%;
-    }
-}
-/*desktop media query*/
-@media only screen and(min-width:961px){
-    .img-proyectos {
+    .home-container{
         width: 100%;
     }
 }
 
-/*fin smedia query proyectos cards*/
-
-/* estilos trabajos*/
-
-.conteiner-trabajos{
-    width: 100%;
+@media only screen and(min-width:300px){
+    .home-container{
+        width: 100%;
+    }
+}
+/*tablet media query*/
+@media only screen and(min-width:400px){
+    .home-container{
+        width: 100%;
+    }
 }
 
-.conteiner-trabajos .conteiner-box{
+@media only screen and(min-width:1258px){
+    .home-container{
+        width: 100%;
+    }
+}
+/*desktop media query*/
+@media only screen and(min-width:961px){
+    .home-container{
+        width: 100%;
+    }
+}
+/************************************ FIN MEDIA  QUERY  HOME *********************************************/
+/* estilos HOME */
+
+.home-container{
+    width: 100%;
+    border-bottom: 5px solid #6eb59bac;
+}
+
+
+
+/* estilos ABOUT */
+/************************************ INICIO MEDIA  QUERY  ABOUT *********************************************/
+/*mobile media query*/
+
+@media only screen and(max-width:400px){
+    .about-container{
+        width: 100%;
+        align-items:center;
+    }
+}
+@media only screen and (min-width: 350px) {
+    .about-container{
+      width: 100%;
+      align-items:center;
+    }
+  }
+
+/*tablet media query*/
+@media only screen and(min-width:401px){
+    .about-container{
+        width: 100%;
+        align-items:center;
+    }
+}
+/*desktop media query*/
+@media only screen and(min-width:961px){
+    .about-container{
+        width: 100%;
+        align-items:center;
+    }
+}
+
+/************************************ FIN MEDIA  QUERY ABOUT *********************************************/
+/* estilos ABOUT */
+
+.about-container{
+    width: 100%;  
+}
+
+.about-container .about-box .container-titulo-about
+.h1-about{
     display: flex;
     justify-content: center;
-}
-
-.conteiner-trabajos .conteiner-box
-.proyecto-jack{
-    background-image: url(img/proyectos/fond-3.png);
-    background-size: cover;
-} 
-
-.conteiner-trabajos .conteiner-box
-.proyecto-jack .conteiner-texto-jack{
-    padding: 100px 100px;
-    width: 50%;
-}
-
-.conteiner-trabajos .conteiner-box
-.titulo-proyectos h2{
-    background-color: #ffffff;
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    font-family: 'Montserrat', 'sans-serif';
-    font-weight: normal;
     color: #6db79b;
+    margin: 130px 10px 10px 10px;
+}
+
+.about-container .about-box .container-parrafo-about
+.parrafo-about{
+   padding: 10px 160px;
+   display: flex;
+   justify-content: center;
+}
+
+.about-container .container-titulo-about .h2-about{
+    color: #f9482e;
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px;
+}
+
+.about-container .container-titulo-about .h3-about{
+    color: #217073;
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px;
+}
+
+.about-container .about-box .img-raiz{
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+
+/* estilos PROYECTOS */
+
+#proyectos{
+    background-image: url(img/proyectos/fond-2.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+#proyectos .bg-blanco{
+    background-color: #ffffff;
+    height: 80px;
+}
+
+#proyectos .titulo-proyectos {
+    width: 100%;
+    margin: auto;
+    text-align: center;   
+}
+
+#proyectos .titulo-proyectos h2 {
+    background-image: url(img/proyectos/fond-2.png);
+    font-weight: bold;
+    color: #ffffff;
     padding: 20px 20px;
 }
 
-.conteiner-trabajos .conteiner-box
-.proyecto-jack .conteiner-texto-jack
-.h3-jack{
-    font-size: 20px;
-    font-family: 'Montserrat', 'sans-serif';
-    font-weight: normal;
-    color: #ffffff;
-    padding: 10px 0px;
+#proyectos .box-proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
 }
 
-.conteiner-trabajos .conteiner-box
-.proyecto-jack .conteiner-texto-jack
-.h2-jack{
+#proyectos .box-proyectos .proyectos-imgcontainer {
+    width: 90%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 45% 45%;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* hover img proyectos*/
+#proyectos .box-proyectos .proyectos-imgcontainer .grid-img a img{
+    transition: all 0.5 linear;
+}
+
+#proyectos .box-proyectos .proyectos-imgcontainer .grid-img a img:hover{
+    color: #ffffff;
+    opacity: 80%;
+}
+
+/* estilo seccion jack*/
+
+#jack {
+    background-image: url(img/proyectos/fond-3.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 80%;
+	width: 100%;
+}
+
+#jack .bg-blanco{
+    background-color: #ffffff;
+    height: 80px;
+}
+
+#jack .titulo-proyectos {
+    width: 100%;
+    margin: auto;
+    text-align: center;   
+}
+
+#jack .titulo-proyectos h2 {
+    background-image: url(img/proyectos/fond-3.png);
+    font-weight: bold;
+    color: #ffffff;
+    padding: 20px 20px;
+}
+
+#jack .box-proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#jack .box-proyectos .proyectos-imgcontainer {
+    width: 90%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+#jack .box-proyectos .proyectos-imgcontainer h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    color: #ffffff;
+    padding: 10px 30px;
+}
+
+#jack .box-proyectos .proyectos-imgcontainer h2{
     font-size: 40px;
     text-transform: uppercase;
-    font-family: 'Montserrat', 'sans-serif';
+    text-align: center;
     font-weight: bolder;
     color: #ffffff;
     line-height : 40px;
+    padding-left: 20px;
 }
 
-.conteiner-trabajos .conteiner-box
-.proyecto-jack .conteiner-texto-jack
-.h2-jackmaestro{
-    font-size: 40px;
-    text-transform: uppercase;
-    font-family: 'Montserrat', 'sans-serif';
-    font-weight: bolder;
+#jack .box-proyectos .proyectos-imgcontainer p{
     color: #ffffff;
     line-height : 20px;
+    padding: 10px 40px;
 }
 
-hr {
-    border: 3px solid #ffffff;
-    opacity: 100%;
-    width: 300px;
+#jack .box-proyectos .proyectos-imgcontainer img{
+    width: 70%;
+    padding-bottom: 5%;
 }
 
-.conteiner-trabajos .conteiner-box
-.proyecto-jack .conteiner-texto-jack
-.parrafo-jack{
-    font-size: 13px;
-    color: #ffffff;
-    line-height : 20px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CAROUSEL */
+
+.car {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
 }
 
-.conteiner-trabajos .conteiner-box
-.proyecto-jack .jack .conteiner-fotojack{
-    width: 50%;
+.car .carrusel-conteiner {
+    width:60%;
+    margin-top: 20px;
 }
 
-.conteiner-trabajos .conteiner-box
-.proyecto-jack .jack .conteiner-fotojack
-.fotojack-01{
-    width: 40rem; 
-    margin-left: 100px;
-    padding-top: 50px;
+.car .carrusel-conteiner #photo-services {
+    width: 70%;
 }
+
+.car {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.car .carrusel-conteiner {
+    width:60%;
+    height: 80%;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* estilos EXPERIENCIA */
 
@@ -368,7 +492,6 @@ hr {
     height: 5rem;
     display: flex;
     justify-content: center;
-    font-family: 'Montserrat', 'sans-serif';
     font-weight: normal;
     color: #ffffff;
     padding: 20px 20px;
@@ -382,3 +505,4 @@ hr {
     font-weight: normal;
     color: #4d4d4d;
 }
+
