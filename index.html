@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-----------------------------------------------------------INICIO HEAD--------------------------------------------------------------------->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-----------------------------------------------------------SEO-------------------------------------------------------------------->
+    <meta name="description" content="Starealacris es mi portafolio de los trabajos más importantes realizados 
+    durante mi carrera universitaria, se podrán apreciar proyectos de tipo editorial y de producto.">  
+    <meta name="keywords" content="portafolio, trabajos universitarios, universidad, diseño gráfico, diseño, diseñador, web, desarrollo, 
+    página web, portfolio, carrera, desarrollo">
+    <link rel="shortcut icon" href="img/home/apple-icon.png" type="image/x-icon">
+    <!-----------------------------------------------------------OPEN GRAPH-------------------------------------------------------------------->
+    <meta property="og:title" content="Starealacris Portafolio Universitario">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/home/logomp.png">
+    <meta property="og:description" content="Portafolio de mis trabajos finales en la universidad">
+    <meta property="og:url" content="https://Users/mariapamartinez/Documents/coderhouse/desafios/28-03-2021-desafio%2013/html/index.html#home">
     <!-----------------------------------------------------------FONTS-------------------------------------------------------------------->
     <!--esta es la script para titulos principales-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,81 +32,78 @@
     <!-------------------------------------------------------------BOOTSTRAP------------------------------------------------------------------>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-------------------------------------------------------------JS------------------------------------------------------------------>
+    <script src="https://kit.fontawesome.com/fbdfe9d794.js" crossorigin="anonymous"></script>
     <!-------------------------------------------------------------CSS------------------------------------------------------------------>
     <link rel="stylesheet" href="style.css">
-    <title>Starealacris</title>
+    <title>Starealacris Portafolio de Diseño Gráfico</title>
 </head>
 <!-----------------------------------------------------------INICIO BODY--------------------------------------------------------------------->
 <body>
-    <!-----------------------------------------------------------NAV BAR--------------------------------------------------------------------->
-    <header class="menu-conteiner">
-        <nav class="display">
-            <div class="logo-home">
-                <a href="#home">
-                    <img src="img/home/logomp.png" class="logo-home" alt="logo-mp">
-                </a>
-            </div>
-            <div class="menu-box">
-                <ul class="menu">
-                    <li><a href="#home" class="menu-font">Home</a></li>
-                    <li><a href="#about" class="menu-font">Acerca</a></li>
-                    <li><a href="#proyectos" class="menu-font">Proyectos</a></li>
-                    <li><a href="projects.html" class="menu-font">Experiencia</a></li>
-                    <li><a href="contact.html" class="menu-font">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-<!-------------------------------------------------------------------SECCIONES------------------------------------------------------------------------>
-    <!-------------------------------------------------------------HOME----------------------------------------------------------------------->
-    <section id="home"></section>
-        <div class="home-container">
-            <img src="img/home/fond-1.png" class="imagen1-header" alt="fondo-sombrillas-de-colores">
+<!-----------------------------------------------------------NAV BAR--------------------------------------------------------------------->
+   <!--HEADER-->
+   <header id="header">
+    <nav class="menu d-flex justify-content-between align-items-center fixed-top">
+      <div class="logo-box d-flex align-items-center">
+        <h2 id="m"><a href="#header">M</a></h2>
+        <h2 id="p"><a href="#header">p</a></h2>
+        <span class="btn-menu"><i class="fas fa-caret-down"></i></span>
+      </div>
+      <div class="list-container">
+        <ul class="lists d-flex">
+          <li><a href="#header">Inicio</a></li>
+          <li><a href="#about">Acerca</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#titulogaleria">Galería</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <section id="home">
+        <div class="header">
+            <img src="img/home/fond-1.png" class="imagen1-header img-fluid" alt="fondo-sombrillas-de-colores">
         </div>
-    </section>    
-    
+    </section>  
+  <!-------------------------------------------------------------------SECCIONES------------------------------------------------------------------------>
     <!-------------------------------------------------------------ACERCA DE------------------------------------------------------------------------>
-    <section id="about" class="about-container">
+    <section id="about">
         <div class="about-box">
             <div class="container-titulo-about">
-                <h1 class="h1-about">Acerca de María Paula</h1>
+                <h1>Acerca de María Paula</h1>
             </div>
             <div class="container-parrafo-about">
-                <p class="parrafo-about">
-                Gracias a mi formación como Diseñadora Gráfica, unido a mis conocimientos para la transformación digital y 2
-                años de experiencia en diseño web, gifs, carrusel y gestión de apps cumplo con los objetivos de la empresa en pro de mejorar la
-                experiencia con el Cliente. Me destaco por ser creativa, innovadora y orientada a la generación de alternativas de solución 
-                enfocadas al mejoramiento de marca y al posicionamiento de productos y/o servicios.
+                <p>
+                Gracias a mi formación como Diseñadora Gráfica, unido a mis conocimientos para la transformación digital y 2 años de experiencia en diseño web, 
+                gifs, carrusel y gestión de apps, cumplo con los objetivos de la empresa en pro de mejorar la experiencia con el Cliente. Me destaco por ser 
+                creativa, innovadora y orientada a la generación de alternativas de solución enfocadas al mejoramiento de marca y al 
+                posicionamiento de productos y/o servicios.
                 </p>
             </div>
             <div class="container-titulo-about">
-                <h2 class="h2-about">Concepto Gráfico de Starealacris</h2>
+                <h2>Concepto Gráfico de Starealacris</h2>
             </div>
             <div class="container-parrafo-about">
-                <p class="parrafo-about">
-                Gracias a mi formación como Diseñadora Gráfica, unido a mis conocimientos para la transformación digital y 2
-                años de experiencia en diseño web, gifs, carrusel y gestión de apps cumplo con los objetivos de la empresa en pro de mejorar la
-                experiencia con el Cliente. Me destaco por ser creativa, innovadora y orientada a la generación de alternativas de solución 
-                enfocadas al mejoramiento de marca y al posicionamiento de productos y/o servicios.
+                <p>
+                Nace de el análisis realizado a partir de mis gustos e intereses tanto visuales como personales, evidenciados en referentes como el cine, 
+                la lectura, el deporte y personajes influyentes de la historia. Es así como empecé a buscar cualidades y características gráficas de estos, 
+                para obtener como resultado un conjunto de sistemas definidos por el contraste entre sus formas, tipografías, colores, geometrías, calibres, 
+                formatos-contenedores, ilustraciones, significados y representaciones de los mismos. 
                 </p>
-            </div>
-            <div class="container-titulo-about">
-                <h3 class="h3-about">Raíz Etimológica de Starealacris</h3>
-            </div>
-            <div class="img-raiz" >
-                <img src="img/about/raices.png" class="img-raiz"   alt="imagen-raíz-etimológica">
-            </div>
+                <p>
+                Sin embargo también se desarrolló un estudio a conciencia de lo que yo considero me define como persona, de los sentimientos y sensaciones 
+                que me genera relacionarme con mis conocimientos y referentes. Como resultado final se escogieron las palabras contraste y 
+                alegría que representan lo antieiromente descrito.</p>
+            </div> 
         </div>   
     </section>
     <!----------------------------------------------------------PROYECTOS MENU--------------------------------------------------------------------->
     <section id="proyectos">
-        <div class="bg-blanco">
-
+        <div class="starealacris">
+            <img src="img/proyectos/marca.png"  class="img-fluid"  alt="portafolio-starealacris">
         </div>
         <div class="titulo-proyectos">
             <h2>Proyectos</h2>
         </div>
-
         <div class="box-proyectos">
 
             <div class="proyectos-imgcontainer">
@@ -137,67 +145,153 @@
             </div>
         </div>
     </section>
-    <!----------------------------------------------------------INICIO RPROYECTOS------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------INICIO RPROYECTOS------------------------------------------------------------------------------------------->
     <!----------------------------------------------------------JACK EL MAESTRO------------------------------------------------------------------------------>
     <section id="jack">
-        <div class="bg-blanco">
-        </div>
-        <div class="titulo-proyectos">
-            <h2>Jack el Maestro</h2>
-        </div>
-
         <div class="box-proyectos">
-            <div class="proyectos-imgcontainer">
-                <div>
+            <div class="contendor-jack">
+                <div class="texto-jack">
                     <h3>Problema de Diseño:</h3>
-                    <h2>Jack el</h2>
-                    <h2>Maestro</h2>
-
+                    <h2>Jack el Maestro</h2>
                     <h3>Tema:</h3>
                     <p>
                     En la actualidad las nuevas generaciones de jóvenes adultos tienden a realizar actividades cotidianas
                     que no los implican en nuevas oportunidades o campos dentro del desarrollo personal que potencien sus
                     intereses y por ese conducto los de un país. Estos individuos generalmente son altamente influenciables
                     por personas que se convierten en ejemplos de superación y se destacan por su innovación y creatividad.
+                    </p>
+                    <p>
                     Consciente de este comportamiento se desarrollará una estrategia que le presente en un formato novedoso
                     y dinámico las formas de pensamiento y casos de superación de sujetos que se han convertido en
                     líderes mundiales en diferentes campos e intereses de la sociedad.
                     </p>
                 </div>
-                <div>
+
+                <div class="img-jack">
                     <img src="img/proyectos/mockuptrabajo01.png" class="img-fluid" alt="Articulo-de-Jack">
                 </div>
             </div>     
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!----------------------------------------------------------FINAL RPROYECTOS-------------------------------------------------------------------------------------------->
-    <!----------------------------------------------------------INICIO CARRUSEL-------------------------------------------------------------------------------------------->
-    <section class="car">
+<!----------------------------------------------------------XTREME BOX------------------------------------------------------------------------------>
+    <section id="xtremebox">
+        <div class="box-proyectos">
+            <div class="contendor-jack">
+                <div class="texto-jack">
+                    <h3>Problema de Diseño:</h3>
+                    <h2>X-Treme Box</h2>
+                    <h3>Tema:</h3>
+                    <p>
+                    Según un reciente estudio del ICBF, la obesidad infantil en niños de 5 a 17 años en el país aumentó del 14,2% a 18,3 % en los últimos 
+                    5 años, lo que dejó al descubierto los malos hábitos alimenticios que existen en Colombia. Los principales afectados son los niños y 
+                    preadolescentes que en su etapa de crecimiento no poseen la información adecuada para alimentarse sanamente. 
+                    </p>
+                    <p>
+                    Debido a esto se creó una estrategia que promoviera buenos hábitos de alimentación en niños entre los 7 y 14 años, 
+                    por medio de un kit de loncheras con divertidos diseños que contienen la información adecuada que tanto ellos como sus 
+                    padres necesitan para conocer los distintos tipos de alimentos nutritivos, que les permitirán cambiar las preocupantes 
+                    cifras por niños cada vez más sanos y felices.
+                    </p>
+                </div>
+                <div class="img-jack">
+                    <img src="img/proyectos/mockuptrabajo05.png" class="img-fluid" alt="xtreme-box">
+                </div>
+            </div>     
+            </div>
+        </div>
+    </section>
+<!----------------------------------------------------------LA DAMA DE LAS LETRAS------------------------------------------------------------------------------>
+    <section id="ladama">
+        <div class="box-proyectos">
+            <div class="contendor-jack">
+                <div class="texto-jack">
+                    <h3>Problema de Diseño:</h3>
+                    <h2>La Dama de las Letras</h2>
+                    <h3>Tema:</h3>
+                    <p>
+                        Según un estudio de Grammata, la biblioteca virtual más grande de Latinoamérica, los jóvenes universitarios en 
+                        Colombia no poseen hábitos de lectura ni tampoco una adecuada comprensión de lo que leen y escriben. 
+                        Esta problemática se da principalmente en los jóvenes que ven en las facilidades del internet, la mejor 
+                        forma para informarse y entretenerse, sumado a las falencias que existen en la secundaria para resolver l
+                        os malos hábitos de lectoescritura.
+                    </p>
+                    <p>
+                        Es allí donde este proyecto implementará un plan de acción por medio 
+                        de una serie de libros de diferentes autores y temáticas, que potenciado por talleres y la colaboración 
+                        de los educadores incentivarán a los jóvenes a encontrar en la lectura un espacio de entretenimiento y 
+                        conocimiento que mejorará sus aptitudes para leer y escribir, así como les dará un entendimiento 
+                        integral de la vida misma a través de las letras de los mejores autores a nivel mundial.
+                    </p>
+                </div>
+                <div class="img-jack">
+                    <img src="img/proyectos/mockuptrabajo02.png" class="img-fluid" alt="libro-de-la dama">
+                </div>
+            </div>     
+            </div>
+        </div>
+    </section>   
+<!----------------------------------------------------------BAJO TIERRA ------------------------------------------------------------------------------>
+    <section id="bajotierra">
+        <div class="box-proyectos">
+            <div class="contendor-jack">
+                <div class="texto-jack">
+                    <h3>Problema de Diseño:</h3>
+                    <h2>Bajo Tierra</h2>
+                    <h3>Tema:</h3>
+                    <p>
+                        En la actualidad las grandes ciudades del mundo sufren por la congestión vehicular, que además de no brindar una solución 
+                        a la movilidad de las personas, está comprobado que es una de las principales fuentes de estrés y contaminación ambiental 
+                        que aqueja a las metrópolis mundiales.
+                    </p>
+                    <p>
+                        Tomando como referencia a Londres, esta guía tiene como objetivo mostrar las facilidades 
+                        de usar el transporte público en una ciudad cosmopolita, que además de solucionar las problemáticas ambientales, también 
+                        es una oportunidad para diversificar los medios de transporte beneficiando a toda una sociedad en su conjunto a través de 
+                        una guía práctica sobre el uso del metro complementada con tips y cifras esclarecedoras 
+                        sobre los beneficios de que cada vez más personas opten por el uso de un medio de transporte masivo.
+                    </p>
+                </div>
+                <div class="img-jack">
+                    <img src="img/proyectos/mockuptrabajo03.png" class="img-fluid" alt="Articulo-de-bajo-tierra">
+                </div>
+            </div>     
+            </div>
+        </div>
+    </section>   
+<!-------------------------------------------------------------NUEVA ZELANDA--------------------------------------------------------------------------->
+    <section id="nuevazelanda">
+        <div class="box-proyectos">
+            <div class="contendor-jack">
+                <div class="texto-jack">
+                    <h3>Problema de Diseño:</h3>
+                    <h2>Nueva Zelanda</h2>
+                    <h3>Tema:</h3>
+                    <p>
+                    Existe un gran desconocimiento en nuestro país sobre los destinos turísticos emergentes que en la actualidad sobresalen por 
+                    sus maravillas naturales, gastronomía y desarrollo sociocultural. 
+                    </p>
+                    <p>
+                    Es el caso de Nueva Zelanda, país que se ha consolidado como destino obligado en Oceanía por sus magníficos paraísos naturales y su 
+                    destacada calidad de vida. Este proyecto tuvo como objetivo implementar una nueva imagen en países de esta parte del mundo, a través 
+                    de una marca que promociona a Nueva Zelanda como un lugar paradisiaco, que hacen de este destino, un lugar único para visitar.
+                    </p>
+                </div>
+                <div class="img-jack">
+                    <img src="img/proyectos/mockuptrabajo04.png" class="img-fluid" alt="papeleria-de-nueva-zelanda">
+                </div>
+            </div>     
+            </div>
+        </div>
+    </section>    
+<!----------------------------------------------------------FINAL RPROYECTOS-------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------INICIO CARRUSEL-------------------------------------------------------------------------------------------->
+    <section id="titulogaleria">
+        <div>
+            <h2>Galería de Proyectos</h2>
+        </div>
+    </section>
+    <section id="galeria">
         <div class="carrusel-conteiner d-flex flex-column justify-content-center align-items-center">
             <div id="photo-services" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -246,43 +340,6 @@
     <!----------------------------------------------------------FIN CARRUSEL-------------------------------------------------------------------------------------------->
 
     <!----------------------------------------------------------CONTACTO-------------------------------------------------------------------------------------------->
-    <section id="experiencia" class="box-experiencia">
-        <div class="conteiner-experiencia col-sm-12 col-md-12 col-lg-12">
-            <div class="titulo-experiencia">
-                <h2>Experiencia</h2>
-            </div>
-            <div class="parrafo-experiencia">
-                <p>
-                    Me encargué de trabajar de la mano con el In-House para coordinar la creación de las artes y
-                    enviarlos a través de
-                    la plataforma especializada Eloqua de Oracle, con la finalidad de mejorar los procesos digitales
-                    en la línea interna
-                    de comunicaciones y otras líneas de negocio como: productos Pyme, Vehículos y Tarjetas de
-                    crédito. También realizaba
-                    el diseño web de Landings e E-mails para redes (Facebook, Twitter, Instagram, Workplace, y la
-                    App Compras Davivienda).
-                </p>
-                <p>
-                    De esta manera obtuve reconocimientos internos por presentar ideas, conceptos y estrategias para
-                    la ejecución de concursos
-                    eventuales como:
-                </p>
-                <ul>
-                    <li>Concurso del Mundial de Rusia FIFA 2018.</li>
-                    <li>Concurso interno “Mi casa”: (Insight para mejorar el desarrollo profesional de los
-                        empleados).</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!----------------------------------------------------------------FOOTER------------------------------------------------------------------------>
-    <footer class="footer">
-        <nav>
-            <a href="https://www.linkedin.com/in/mariapaulamartinezpulido/" class="ig">Instagram</a>
-            <a href="https://www.instagram.com/mapamartinez92/" class="li">LinkeInd</a>
-        </nav>
-    </footer>
     <!---------------------------------------------------------- INICIO SCRIPTS DE BOOSTRAP--------------------------------------------------------------------->
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
@@ -292,6 +349,8 @@
         integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
     </script>
     <!---------------------------------------------------------- FINAL SCRIPTS DE BOOSTRAP--------------------------------------------------------------------->
+    <!-----------------------------------------------------------------------JS-------------------------------------------------------------------------------->
+    <script src="js/app.js"></script>
 </body>
 
 </html>
