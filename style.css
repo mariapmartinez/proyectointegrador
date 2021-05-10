@@ -1,8 +1,77 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
+/*ESTILOS MOBILE*/
+
+@media (max-width:1024px)  {
+  
+  #home .header img{
+    display: block;
+    display: none;
+    width: 100%;
+    min-width: 320px;
+  }
+  #about .about-box .container-titulo-about h1{
+    font-size: 1.2rem;
+  }
+  #about .about-box .container-titulo-about h2{
+    font-size: 1em;
+  }
+  #about .about-box .container-parrafo-about p {
+    padding: 5px auto 5px auto;
+    font-size: 0.7rem;
+    line-height: 1,0.5rem;
+  }
+  #proyectos .titulo-proyectos h2{
+    font-size: 1em;
+  }
+  #jack .about-box .container-titulo-about h2{
+    font-size: 1em;
+  }
+  #xtremebox .about-box .container-titulo-about h2{
+    font-size: 1em;
+  }
+  #bajotierra .about-box .container-titulo-about h2{
+    font-size: 1em;
+  }
+  #nuevazelanda .about-box .container-titulo-about h2{
+    font-size: 1em;
+  }
+  #titulogaleria .galeria h2{
+    font-size: 1em;
+  }
+  #galeria .carrusel-conteiner{
+     margin-top: 6px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* declaracion tipografia body */
 body h1{
@@ -26,7 +95,11 @@ body{
     font-size: 12px;
     line-height: 1.1rem;
 }
-/*HEADER*/
+
+
+
+
+/*NAV*/
 .menu {
   width: 100%;
   height: 75px;
@@ -110,7 +183,7 @@ body{
     transition: 0.5s;
     cursor: pointer;
   }
-  .btn-menu > .fa-caret-down:hover {
+  .btn-menu > .fa-caret-down:hover{
     color: #217073;
   }
 
@@ -160,10 +233,14 @@ body{
     color: #fff;
   }
 }
+
+/*estilos HOME*/
+
 #home{
      width: 100%;
      background-color:#f0f2f2;
 }
+
 #home .header{
   width: 100%;
   display: flex;
@@ -178,17 +255,30 @@ body{
   border-bottom: 2px solid #fd4823;
 }
 
+#home .header-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#home .header-2 img{
+  width: 80%;
+  min-width: 320px;
+  border-bottom: 2px solid #fd4823;
+}
+
+
 /* estilos ABOUT */
 #about .about-box{
   width: 100%;
   background-color:#f0f2f2;
-  padding-top: 1em;
-  padding-bottom: 2rem;
+  padding-top: 5%;
 }
 
 #about .about-box .container-titulo-about{
   width: 100%;
-  padding: 2%;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -202,7 +292,6 @@ body{
 
 #about .about-box .container-parrafo-about{
   width: 100%;
-  padding: 2%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -217,10 +306,11 @@ body{
 #about .about-box .container-parrafo-about p{
   width: 80%;
   text-align: justify;
+  color: #333232;
+  padding-bottom: 2%;
 }
 
 /* estilos PROYECTOS */
-
 #proyectos{
   background-image: url(img/proyectos/fond-2.png);
 	background-attachment: fixed;
@@ -255,18 +345,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
 }
 
 #proyectos .box-proyectos .proyectos-imgcontainer {
     width: 90%;
     display: grid;
     justify-content: center;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 30% 30%;
     grid-template-rows: 45% 45%;
     grid-column-gap: 20px;
     grid-row-gap: 40px;
-    justify-items: center;
     align-items: center;
 }
 
@@ -280,279 +370,311 @@ body{
     opacity: 80%;
 }
 
-/* estilo seccion jack*/
+/* estilo seccion JACK*/
 
 #jack{
-  background-image: url(img/proyectos/fond-2.png);
+  background-image: url(img/proyectos/fond-4.png);
   background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
-  padding-top: 5%;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
-#jack .box-proyectos{
-  width: 80%;
-}
-
-#jack .box-proyectos .contenedor-jack{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 30% 30%;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-}
-
-.texto-jack h3{
-color: #fff;
-font-weight: normal ;  
-}
-
-.texto-jack h2{
-  padding: 0% 0% 0% 30%;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  font-weight: bold;  
-}
-
-.texto-jack p{
-    padding: 0 0% 0 40% ;
-}
-
-.img-jack img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10% 0 40%;
-}
-
-/* estilo seccion xtreme box*/
-
-#xtremebox{
-  background-image: url(img/proyectos/fond-2.png);
-  background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
-  padding-top: 5%;
-}
-
-#xtremebox .box-proyectos{
-  width: 80%;
-}
-
-#xtremebox .box-proyectos .contenedor-jack{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 30% 30%;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  justify-items: center;
-  align-items: center;
-}
-
-.texto-jack h3{
-padding: 0% 0% 0% 30%;
-align-items: center;
-text-align: center;
-color: #fff;
-font-weight: normal ;  
-}
-
-.texto-jack h2{
-  padding: 0% 0% 0% 30%;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  font-weight: bold;  
-}
-
-.texto-jack p{
-    padding: 0 0% 0 40% ;
-}
-
-.img-jack img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10% 0 40%;
-}
-
-/* estilo seccion la dama*/
-
-#ladama{
-  background-image: url(img/proyectos/fond-2.png);
-  background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
-  padding-top: 5%;
-}
-
-#ladama .box-proyectos{
-  width: 80%;
-}
-
-#ladama .box-proyectos .contenedor-jack{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 30% 30%;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  justify-items: center;
-  align-items: center;
-}
-
-.texto-jack h3{
-padding: 0% 0% 0% 30%;
-align-items: center;
-text-align: center;
-color: #fff;
-font-weight: normal ;  
-}
-
-.texto-jack h2{
-  padding: 0% 0% 0% 30%;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  font-weight: bold;  
-}
-
-.texto-jack p{
-  padding: 0 0% 0 40% ;
-}
-
-.img-jack img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10% 0 40%;
-}
-
-/* estilo seccion la bajo tierra*/
-#bajotierra{
-  background-image: url(img/proyectos/fond-2.png);
-  background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
-  padding-top: 5%;
-}
-
-#bajotierra .box-proyectos{
-  width: 80%;
-}
-
-#bajotierra .box-proyectos .contenedor-jack{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 30% 30%;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  justify-items: center;
-  align-items: center;
-}
-
-.texto-jack h3{
-padding: 0% 0% 0% 30%;
-align-items: center;
-text-align: center;
-color: #fff;
-font-weight: normal ;  
-}
-
-.texto-jack h2{
-  padding: 0% 0% 0% 30%;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  font-weight: bold;  
-}
-
-.texto-jack p{
-  padding: 0 0% 0 40% ;
-}
-
-.img-jack img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10% 0 40%;
-}
-
-/* estilo seccion nueva zelanda*/
-#nuevazelanda{
-  background-image: url(img/proyectos/fond-2.png);
-  background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
+#jack .about-box{
+  width: 100%;
   padding-top: 5%;
   padding-bottom: 2%;
 }
 
-#nuevazelanda .box-proyectos{
-  width: 80%;
-} 
-
-#bajotierra .box-proyectos .contenedor-jack{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 30% 30%;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  justify-items: center;
-  align-items: center;
-}
-
-.texto-jack h3{
-padding: 0% 0% 0% 30%;
-align-items: center;
-text-align: center;
-color: #fff;
-font-weight: normal ;  
-}
-
-.texto-jack h2{
-  padding: 0% 0% 0% 30%;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  font-weight: bold;  
-}
-
-.texto-jack p{
-  padding: 0 0% 0 40% ;
-}
-
-.img-jack img{
+#jack .about-box .container-titulo-about{
+  width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: row;
   align-items: center;
-  padding: 0 10% 0 40%;
 }
 
-/* CAROUSEL */
+#jack .about-box .container-titulo-about h3{
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+}
+
+#jack .about-box .container-titulo-about h2{
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+#jack .about-box .container-parrafo-about{
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+#jack .about-box .container-parrafo-about p{
+  width: 80%;
+  text-align: justify;
+  color: #292828;
+}
+
+#jack .img-box{
+  width: 100%;
+  height: 100%;
+}
+
+#jack .img-box .img-contenedor{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#jack .img-box .img-contenedor img{
+  width: 45%;
+}
+
+
+/* estilo seccion XTREME BOX*/
+
+#xtremebox{
+  background-image: url(img/proyectos/fond-4.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#xtremebox .about-box{
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+#xtremebox .about-box .container-titulo-about{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+#xtremebox .about-box .container-titulo-about h3{
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+}
+
+#xtremebox .about-box .container-titulo-about h2{
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+#xtremebox .about-box .container-parrafo-about{
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+#xtremebox .about-box .container-parrafo-about p{
+  width: 80%;
+  text-align: justify;
+  color: #292828;
+}
+
+#xtremebox .img-box{
+  width: 100%;
+  height: 100%;
+}
+
+#xtremebox .img-box .img-contenedor{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#xtremebox .img-box .img-contenedor img{
+  width: 45%;
+}
+
+
+/* estilo seccion BAJO TIERRA*/
+
+#bajotierra{
+  background-image: url(img/proyectos/fond-4.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#bajotierra .about-box{
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+#bajotierra .about-box .container-titulo-about{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+#bajotierra .about-box .container-titulo-about h3{
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+}
+
+#bajotierra .about-box .container-titulo-about h2{
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+#bajotierra .about-box .container-parrafo-about{
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+#bajotierra .about-box .container-parrafo-about p{
+  width: 80%;
+  text-align: justify;
+  color: #292828;
+}
+
+#bajotierra .img-box{
+  width: 100%;
+  height: 100%;
+}
+
+#bajotierra .img-box .img-contenedor{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bajotierra .img-box .img-contenedor img{
+  width: 45%;
+}
+
+
+/* estilo seccion NUEVA ZELANDA*/
+
+#nuevazelanda{
+  background-image: url(img/proyectos/fond-4.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#nuevazelanda .about-box{
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+#nuevazelanda .about-box .container-titulo-about{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+#nuevazelanda .about-box .container-titulo-about h3{
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+}
+
+#nuevazelanda .about-box .container-titulo-about h2{
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+#nuevazelanda .about-box .container-parrafo-about{
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+#nuevazelanda .about-box .container-parrafo-about p{
+  width: 80%;
+  text-align: justify;
+  color: #292828;
+}
+
+#nuevazelanda .img-box{
+  width: 100%;
+  height: 100%;
+}
+
+#nuevazelanda .img-box .img-contenedor{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nuevazelanda .img-box .img-contenedor img{
+  width: 45%;
+  padding-bottom: 3%;
+}
+
+
+/* estilos CAROUSEL */
 #titulogaleria{
   width: 100%;
-  padding: 5% 0 0 0;
-  display: flex;
-  justify-content: center;
+  height: 100%;
+  padding: 2%;
+  background: #e0dcdc;
 }
 
-#titulogaleria h2{
+#titulogaleria .galeria{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5%;
+}
+
+#titulogaleria .galeria h2{
   color: #217073;
-  font-weight: bold;
+  font-weight: bold; 
 }
 
 #galeria {
@@ -560,30 +682,38 @@ font-weight: normal ;
     justify-content:center;
     align-items: center;
     margin: 0 auto;
-    height: 100vh;
+    height: 100%;
+    background: #e2e0e0;
 }
 
 #galeria .carrusel-conteiner {
     width:60%;
-    margin-top: 5%;
+    margin: 5%;
+    height: 80%;
 }
 
 #galeria .carrusel-conteiner #photo-services {
     width: 70%;
 }
 
-#galeria {
-    display: flex;  
-    justify-content:center;
-    align-items: center;
-    margin: 0 auto;
-    height: 100vh;
+
+/* estilos CONTACTO*/
+
+#contacto{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#galeria .carrusel-conteiner {
-    width:60%;
-    height: 80%;
-    margin-top: 20px;
+#contacto .container{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background:url(html/img/contacto/fond-4.png);
 }
 
 
@@ -628,19 +758,15 @@ font-weight: normal ;
 
 
 
+/*ESTILOS DESKTOP*/
 
+@media (min-width: 961px) {
 
-/*ESTILOS MOBILE*/
-
-@media (max-width:1024px)  {
-  #about .about-box .container-parrafo-about:before p {
-    font-size: 1.6rem;
-  }
-  #about .about-box .container-parrafo-about p {
-    padding: 5px auto 5px auto;
-  }
-  #home .header img{
-    width: 100%;
-    min-width: 320px;
+  #home .header-2 img{
+     display: block;
+    display: none;
   }
 }
+
+
+
